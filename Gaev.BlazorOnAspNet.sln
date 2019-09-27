@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldAspNetApp", "OldAspNetAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmApp", "BlazorWasmApp\BlazorWasmApp.csproj", "{CEAC856F-6F18-4FDA-91C8-838380946527}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FixBlazorStaticFiles", "FixBlazorStaticFiles\FixBlazorStaticFiles.csproj", "{72F2F176-2FC2-4845-9B3C-EB25B861B7FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

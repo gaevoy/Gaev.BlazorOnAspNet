@@ -19,6 +19,7 @@
     <Target Name="CopyToOldAspNetApp" AfterTargets="Build">
         <Exec Command="xcopy $(TargetDir)web.config $(TargetDir)dist\_framework\ /Y" />
         <Exec Command="xcopy $(TargetDir)dist $(SolutionDir)OldAspNetApp /Y /S" />
+        <Exec Command="dotnet run --project $(SolutionDir)FixBlazorStaticFiles $(SolutionDir)OldAspNetApp\_framework\" />
     </Target>
 
 </Project>
