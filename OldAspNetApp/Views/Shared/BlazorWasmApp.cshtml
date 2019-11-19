@@ -1,3 +1,16 @@
+@{
+    Func<string, string> ComputeMd5 = filename =>
+    {
+        using (var md5 = System.Security.Cryptography.MD5.Create())
+        {
+            using (var stream = File.OpenRead(Server.MapPath(filename)))
+            {
+                var hash = md5.ComputeHash(stream);
+                return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
+            }
+        }
+    };
+}
 <BlazorWasmApp>Blazor WASM app loading...</BlazorWasmApp>
 <base href="/"/>
-<script src="/_framework/blazor.webassembly.js"></script>
+<script src="/_framework/blazor.webassembly.js?v=@ComputeMd5("~/_framework/blazor.webassembly.js")"></script>
