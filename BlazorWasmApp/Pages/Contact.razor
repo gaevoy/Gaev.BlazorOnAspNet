@@ -1,0 +1,20 @@
+﻿@page "/Home/Contact"
+
+<div class="panel panel-warning">
+    <div class="panel-heading">
+        Blazor WASM app
+    </div>
+    <div class="panel-body">
+        <p>Current count: @currentCount</p>
+        <button class="btn btn-warning" @onclick="IncrementCount">Click me</button>
+    </div>
+</div>
+
+@code {
+    int currentCount = 0;
+
+    void IncrementCount()
+    {
+        currentCount++;
+    }
+}
