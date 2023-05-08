@@ -4,3 +4,4 @@ obj/
 .idea/
 .vs/
 *.user
+/OldAspNetApp_4_8/_framework/*

@@ -1,0 +1,20 @@
+﻿@page "/Home/Contact"
+
+<div class="card text-white bg-warning">
+    <div class="card-header">
+        Blazor WASM app
+    </div>
+    <div class="card-body">
+        <p>Current count: @currentCount</p>
+        <button class="btn btn-dark" @onclick="IncrementCount">Click me</button>
+    </div>
+</div>
+
+@code {
+    int currentCount = 0;
+
+    void IncrementCount()
+    {
+        currentCount++;
+    }
+}
